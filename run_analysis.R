@@ -78,4 +78,4 @@ summarized<-group_by(mean_std_data, participant_id, activity_id)%>%
         summarise_all(mean)
 
 #Write file
-write.table(summarized, file = "wearable_averages.txt")
+write.table(summarized, file = "wearable_averages.txt", row.names = FALSE)
