@@ -1,11 +1,11 @@
 # Summary
 The run_script.R file takes several steps to tidy the data:
 1. It reads in the appropriate data files from the repository that are locally sourced.
-    1. Using readr::read_table with `col_names = FALSE`
+    1. Using `readr::read_table` with `col_names = FALSE`
 1. It appropriately names the variables using the feature file.
-1. It uses dplyr::bind_cols and dplyr::bind_rows to combine the separate files into a tidy configuration.
+1. It uses `dplyr::bind_cols` and `dplyr::bind_rows` to combine the separate files into a tidy configuration.
 1. It uses the activity file to appropriately name the activity variable.
-1. It summarizes the data by taking the mean of all the variables by participant then activity.
+1. It uses `dplyr::summarize` to take the mean of all the variables by participant then activity.
 1. It writes the summarized data to a new file named "wearable_average.txt"
 
 # Variables
