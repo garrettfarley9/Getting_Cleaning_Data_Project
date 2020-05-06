@@ -1,5 +1,5 @@
 # Getting_Cleaning_Data_Project
-Final project for Coursera Getting and Cleaning Data course. The goal is to tidy the data found below and 
+This is the final project for the Coursera course: Getting and Cleaning Data. The goal is to tidy the data set found below and 
 summarize the data by participant and activity.
 
 The data for this project is hosted at the [UCI repository: Human Activity Using Smartphones]
