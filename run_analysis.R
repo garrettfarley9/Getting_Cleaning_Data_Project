@@ -12,17 +12,17 @@ opened<-"2020-05-05 14:35:36 CDT"
 url<-"https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
 
 #Read in features file using readr
-features<- read_delim("~/Rcoursera/gettingdataproject/Getting_Cleaning_Data_Project/UCI HAR Dataset/features.txt", col_names = FALSE, delim = " ")
+features<- read_delim("UCI HAR Dataset/features.txt", col_names = FALSE, delim = " ")
 
 #Read in test files using readr
-sub_test<-read_table("~/Rcoursera/gettingdataproject/Getting_Cleaning_Data_Project/UCI HAR Dataset/test/subject_test.txt", col_names = FALSE)
-testy<- read_table("~/Rcoursera/gettingdataproject/Getting_Cleaning_Data_Project/UCI HAR Dataset/test/y_test.txt", col_names = FALSE)
-testx<-read_table("~/Rcoursera/gettingdataproject/Getting_Cleaning_Data_Project/UCI HAR Dataset/test/X_test.txt", col_names = FALSE)
+sub_test<-read_table("UCI HAR Dataset/test/subject_test.txt", col_names = FALSE)
+testy<- read_table("UCI HAR Dataset/test/y_test.txt", col_names = FALSE)
+testx<-read_table("UCI HAR Dataset/test/X_test.txt", col_names = FALSE)
 
 #Read in train files using readr
-sub_train<-read_table("~/Rcoursera/gettingdataproject/Getting_Cleaning_Data_Project/UCI HAR Dataset/train/subject_train.txt", col_names = FALSE)
-trainy<-read_table("~/Rcoursera/gettingdataproject/Getting_Cleaning_Data_Project/UCI HAR Dataset/train/y_train.txt", col_names = FALSE)
-trainx<-read_table("~/Rcoursera/gettingdataproject/Getting_Cleaning_Data_Project/UCI HAR Dataset/train/X_train.txt", col_names = FALSE)
+sub_train<-read_table("UCI HAR Dataset/train/subject_train.txt", col_names = FALSE)
+trainy<-read_table("UCI HAR Dataset/train/y_train.txt", col_names = FALSE)
+trainx<-read_table("UCI HAR Dataset/train/X_train.txt", col_names = FALSE)
 
 #### Step 4. Appropriately labels the data set with descriptive variable names. ####
 #Rename variables for activity and participant
@@ -60,7 +60,7 @@ rm(test, train)
 
 #### Step 3. Uses descriptive activity names to name the activities in the data set. ####
 #Read in activity labels
-activity<-read_table("~/Rcoursera/gettingdataproject/Getting_Cleaning_Data_Project/UCI HAR Dataset/activity_labels.txt", col_names = FALSE)
+activity<-read_table("UCI HAR Dataset/activity_labels.txt", col_names = FALSE)
 
 #Use activity labels as named factors
 total_set$activity_id <- factor(total_set$activity_id, 
